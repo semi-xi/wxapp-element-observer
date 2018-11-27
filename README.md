@@ -1,23 +1,23 @@
 # 小程序分屏加载实践
 
-在小程序不断迭代的时候，很容易遇到首屏渲染问题。这种问题，可能出现的原因是：小程序包太大，资源需要加载；网络环境太差，下载速度太慢；渲染节点太多，渲染耗时。  
+在小程序不断迭代的时候，很容易遇到首屏渲染问题。这种问题，可能出现的原因是：小程序包太大，资源需要加载；网络环境太差，下载速度太慢；渲染节点太多，渲染耗时。  
 
 针对小程序首次加载包的问题，小程序提出了分包加载的功能，这里不做详细描述，可以去看下[官方文档](https://developers.weixin.qq.com/miniprogram/dev/framework/subpackages.html)  
 
 这里我选择的是针对渲染节点去做优化。
-
+
 ## 技术方案
 
 在微信的API文档里面，有一个判断节点与可视区域的API
 
 > IntersectionObserver 对象，用于推断某些节点是否可以被用户看见、有多大比例可以被用户看见  
 
-这个时候就在想，能不能建立`IntersectionObserver`跟组件之间的关系，使得组件进入可视区域的时候，就显示自己的内容，否则隐藏自己，这样达到动态加载模块的目的。  
+这个时候就在想，能不能建立`IntersectionObserver`跟组件之间的关系，使得组件进入可视区域的时候，就显示自己的内容，否则隐藏自己，这样达到动态加载模块的目的。  
   
 ``` js
 // 伪代码
 // 建立监听
-element.observer()
+element.observer()
 
 // 处理进入
 observer.handleEnterView(() => {
@@ -50,7 +50,7 @@ Component({
   },
   // 在ready写是因为组件在这个时候，才在视图层布局完成
   ready () {
-    // 因为我们是把设备的整个可视区域当成了观参照区域，所以这里直接选择relativeToViewport，如果需要其他的观察区域可以调用relativeTo选择参照区域
+    // 因为我们是把设备的整个可视区域当成了观参照区域，所以这里直接选择relativeToViewport，如果需要其他的观察区域可以调用relativeTo选择参照区域
     this.observer = this.createIntersectionObserver().relativeToViewport()
     // 我这里的做法是，只要观察的节点进入了可视区域，就显示自己本身的内容
     // 实际上这个observer的回调触发时机是观察节点进入或者离开可视区域，我这里选择的是，只要执行了就显示这个区域，并且关闭这个观察
@@ -143,20 +143,23 @@ Component({
 
 ```
 
-## 后续一些讨论
+## 后续一些讨论
 
-在使用`IntersectionObserver`的时候，有试过用`hidden`属性。但是实际上，`hiiden`也是会被渲染出来的，只是不显示而已，并不会造成页面加载速度的提升
+在使用`IntersectionObserver`的时候，有试过用`hidden`属性。但是实际上，`hiiden`也是会被渲染出来的，只是不显示而已，并不会造成页面加载速度的提升
 
 ## 效果图
 
 这里是随便拿的一个demo去弄的，需要的话可以点击[这里](https://github.com/semi-xi/wxapp-element-observer)  
 或者浏览小程序代码片段`https://developers.weixin.qq.com/s/oV1RFfmY7H4W`  
 
+
+使用之前  
+![](http://yjmf.bs2dl.yy.com/Zjc5MDQ3NzEtNDEyYS00YTk1LWI5MjItMzlkMmQxMjAzZmFk.gif)
+
 使用之后  
 ![](http://yjmf.bs2dl.yy.com/MzRiNTQ5ZTQtNTI2Mi00YTE0LTk3MzEtNWRmYzY2MTY2YTJl.gif)
 
-使用之前
-![](http://yjmf.bs2dl.yy.com/Zjc5MDQ3NzEtNDEyYS00YTk1LWI5MjItMzlkMmQxMjAzZmFk.gif)
+可以看得出是提升是相当明显的
 
 ## 后续进阶
 
@@ -196,8 +199,8 @@ Component({
 })
 ```
 
-### 滚动到底部/顶部
+### 滚动到底部/顶部
 
-对于在普通view里面，如果需要做到底加载的话有scroll-view去做，但是这个性能会比较差，容易出现卡顿，这样也可以自己封装一层之后用这个去实现
+对于在普通view里面，如果需要做到底加载的话有scroll-view去做，但是这个性能会比较差，容易出现卡顿，这样也可以自己封装一层之后用这个去实现
 
 
