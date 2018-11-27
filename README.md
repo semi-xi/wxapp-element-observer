@@ -121,7 +121,7 @@ Component({
 </view>
 ```
 
-或者你可以把整个observer做成组件，这样去减少observer的数量，内聚一些模块
+或者你可以把整个observer做成组件，这样去减少observer的数量，内聚一些模块
 
 ``` html
 <!-- Observer.wxml -->
@@ -165,7 +165,7 @@ Component({
 
 ### 图片lazyload方案
 
-image有一个`lazy-load`的属性，但是它只能在page以及在scroll-view使用，如果在其他地方的话是不是也可以用这个去做呢
+image有一个`lazy-load`的属性，但是它只能在page以及在scroll-view使用，如果在其他地方的话是不是也可以用这个去做呢
 
 ```html
 <!-- image-compponent -->
