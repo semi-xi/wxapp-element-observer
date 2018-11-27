@@ -1,0 +1,51 @@
+<view class="B">
+  <view class="header">header</view>
+  <view class="observer"></view>
+  <view class="content">
+   <view class="item">
+    <view class="item-left">
+      <image src="http://n.sinaimg.cn/sinacn/w340h191/20180210/722d-fyrkuxt1412738.jpg"></image>
+    </view>
+    <viem class="item-right">
+      <view>红发也是一个讲义气的好哥们，红发拥有成熟男人的稳重，而且作为四皇实</view>
+      <view>红发也是一个讲义气的好哥们，红发拥有成熟男人的稳重，而且作为好的方式面对</view>
+      </viem>
+   </view>
+   <view class="item">
+    <view class="item-left">
+      <image src="http://n.sinaimg.cn/sinacn/w1080h675/20180210/1893-fyrkuxt1410997.jpg"></image>
+    </view>
+    <viem class="item-right">
+      <view>红发也是一个讲义气的好哥们，红发拥有成熟男人的稳重，而且作为四皇实</view>
+      <view>红发也是一个讲义气的好哥们，红发拥有成熟男人的稳重，而且作为好的方式面对</view>
+      </viem>
+   </view>
+   <view class="item">
+    <view class="item-left">
+      <image src="http://n.sinaimg.cn/sinacn/w1000h548/20180210/f0ed-fyrkuxt1412576.jpg"></image>
+    </view>
+    <viem class="item-right">
+      <view>红发也是一个讲义气的好哥们，红发拥有成熟男人的稳重，而且作为四皇实</view>
+      <view>红发也是一个讲义气的好哥们，红发拥有成熟男人的稳重，而且作为好的方式面对</view>
+      </viem>
+   </view>
+   <view class="item">
+    <view class="item-left">
+      <image src="http://n.sinaimg.cn/sinacn/w261h249/20180210/309b-fyrkuxt1412678.jpg"></image> 
+    </view>
+    <viem class="item-right">
+      <view>红发也是一个讲义气的好哥们，红发拥有成熟男人的稳重，而且作为四皇实</view>
+      <view>红发也是一个讲义气的好哥们，红发拥有成熟男人的稳重，而且作为好的方式面对</view>
+      </viem>
+   </view>
+  <view class="item">
+    <view class="item-left">
+      <image src="http://n.sinaimg.cn/sinacn/w340h191/20180210/722d-fyrkuxt1412738.jpg"></image>
+    </view>
+    <viem class="item-right">
+      <view>红发也是一个讲义气的好哥们，红发拥有成熟男人的稳重，而且作为四皇实</view>
+      <view>红发也是一个讲义气的好哥们，红发拥有成熟男人的稳重，而且作为好的方式面对</view>
+      </viem>
+   </view>
+  </view>
+</view>

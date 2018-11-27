@@ -1,0 +1,18 @@
+{
+  "usingComponents": {
+    "A": "./components/A/A",
+    "B": "./components/B/B",
+    "C": "./components/C/C",
+    "D": "./components/D/D",
+    "E": "./components/E/E",
+    "F": "./components/F/F",
+    "G": "./components/G/G",
+    "H": "./components/H/H",
+    "I": "./components/I/I",
+    "J": "./components/J/J",
+    "K": "./components/K/K",
+    "L": "./components/L/L",
+    "M": "./components/M/M",
+    "N": "./components/N/N"
+  }
+}

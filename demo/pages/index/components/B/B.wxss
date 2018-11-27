@@ -1,0 +1,22 @@
+@import "../../../../style/index.wxss";
+
+.item {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.item-left {
+  width: 200rpx;
+  height: 200rpx;
+}
+.item-left image {
+  width: 200rpx;
+  height: 200rpx;
+  display: block;
+}
+.item-right {
+  flex: 1;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  text-align: left;
+  padding-left: 20rpx;
+}

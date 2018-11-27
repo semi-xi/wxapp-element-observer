@@ -1,0 +1,24 @@
+<view class="C">
+  <view class="header"></view>
+  <view class="observer" wx:if="{{ observer_status }}"></view>
+  <view class="content" wx:if="{{ !observer_status }}">
+    <view class="item" wx:for="{{ testList }}" wx:key="{{ index }}">
+      <view class="name">
+        <view>火影忍者：傲娇的九喇嘛被向日葵当宠物玩，求九尾的心理阴影面积</view>
+      </view>
+      <view class="item-content">
+        <view class="pic">
+          <image src="http://n.sinaimg.cn/sinacn14/281/w640h441/20181126/f6a6-hpevhck7624239.jpg" wx:if="{{ index % 5 === 0 }}" />
+          <image src="http://n.sinaimg.cn/sinacn/w323h202/20180210/0411-fyrkuxt1412844.jpg" wx:if="{{ index % 5 === 1 }}"></image>
+          <image src="http://n.sinaimg.cn/sinacn/w340h192/20180210/7499-fyrkuxt1412798.jpg" wx:if="{{ index % 5 === 2 }}"></image>
+          <image src="http://t-1.tuzhan.com/f0647898c8f8/c-1/l/2012/10/19/12/a252feda69dc44cba0df825d80db7e23.jpg" wx:if="{{ index % 5 === 3 }}"></image>
+          <image src="http://pic36.photophoto.cn/20150710/0005018721870517_b.jpg" wx:if="{{ index % 5 === 4 }}"></image>
+        </view>
+        <view class="info">
+          <view class="intro">火影忍者：傲娇的九喇嘛被向日葵当宠物玩，求九尾的心理阴影面积</view>
+          <view class="link">详细>></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

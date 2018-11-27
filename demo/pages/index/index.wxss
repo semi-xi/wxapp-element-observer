@@ -1,0 +1,4 @@
+.C-Observer {
+  height: 1rpx;
+  margin-bottom: -1rpx;
+}

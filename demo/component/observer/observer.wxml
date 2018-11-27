@@ -1,0 +1,6 @@
+<view class="observer-module">
+  <view class="observer-module__observer" wx:if="{{ !observer_status }}"></view>
+  <block wx:if="{{ observer_status }}">
+    <slot />
+  </block>
+</view>
