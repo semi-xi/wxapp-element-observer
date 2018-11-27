@@ -149,8 +149,10 @@ Component({
 
 ## 效果图
 
-这里是随便拿的一个demo去弄的，需要的话可以点击[这里](https://github.com/semi-xi/wxapp-element-observer)，或者浏览小程序代码片段`https://developers.weixin.qq.com/s/oV1RFfmY7H4W`
-使用之后
+这里是随便拿的一个demo去弄的，需要的话可以点击[这里](https://github.com/semi-xi/wxapp-element-observer)  
+或者浏览小程序代码片段`https://developers.weixin.qq.com/s/oV1RFfmY7H4W`  
+
+使用之后  
 ![](http://yjmf.bs2dl.yy.com/MzRiNTQ5ZTQtNTI2Mi00YTE0LTk3MzEtNWRmYzY2MTY2YTJl.gif)
 
 使用之前
