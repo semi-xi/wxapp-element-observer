@@ -157,7 +157,7 @@ Component({
 ![](http://yjmf.bs2dl.yy.com/Zjc5MDQ3NzEtNDEyYS00YTk1LWI5MjItMzlkMmQxMjAzZmFk.gif)
 
 使用之后  
-![](http://yjmf.bs2dl.yy.com/MzRiNTQ5ZTQtNTI2Mi00YTE0LTk3MzEtNWRmYzY2MTY2YTJl.gif)
+![](http://yjmf.bs2dl.yy.com/ZDZjN2RkMGEtMjhkYS00ZDYyLWJkNGYtNmRjOGUwOTI4Y2My.gif)
 
 可以看得出是提升是相当明显的
 
